@@ -1,0 +1,234 @@
+:root {
+    --main-color: #7f8383;
+    --secondary-color: rgba(104, 102, 102, 0.952);
+    --text-color: #8f8f8f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+#title {
+    padding: 0 10%;
+}
+
+.half-logo {
+    color: rgba(128, 128, 128, 0.993);
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+#main {
+    background-image: url('download.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 15% 10%;
+    color: #fff;
+}
+
+.main-heading {
+    margin: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+#images {
+    padding: 0 10% 5%;
+}
+
+.four-imgs {
+    margin-top: -40px;
+}
+
+.venue-data {
+    padding: 0 10% 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.venues-info {
+    width: 70%;
+}
+
+.address {
+    margin-right: 100px;
+}
+
+.text {
+    font-family: sans-serif;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.map-img {
+    height: 350px;
+    width: 100%;
+}
+
+#tickets {
+    padding: 3% 2% 2%;
+    display: grid;
+}
+
+.ticket-heading {
+    margin: auto;
+}
+
+.ticket-card {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.ticket-img {
+    height: 400px;
+}
+
+.ticket-box {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.ticket-text {
+    width: 70%;
+    padding: 6%;
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.ticket-body {
+    display: flex;
+    padding: 0;
+}
+
+.ticket-btn {
+    transform: rotate(270deg);
+    height: 60px;
+    background-color: #fff;
+}
+
+.ico {
+    margin: 10px;
+}
+
+.ticket-price {
+    margin: 10px;
+    width: 50%;
+    background-color: var(--main-color);
+    padding: 10px;
+    text-align: center;
+}
+
+#locations {
+    padding: 6% 10%;
+    background-color: var(--secondary-color);
+}
+
+.location-img, .location-card {
+    border: 0;
+    border-radius: 0;
+}
+
+#subscribe {
+    padding: 2% 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.get-email {
+    width: 40vw;
+    height: 40px;
+    margin-right: 20px;
+}
+
+#footer {
+    padding: 3% 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text2, .footer-text3, .footer-col-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-text2 {
+    align-items: center;
+}
+
+.footer-text3, .footer-col-3 {
+    align-items: end;
+}
+
+.footer-heading {
+    margin-bottom: 20px;
+}
+
+.copyright {
+    padding: 2% 10%;
+    text-align: center;
+}
+
+.f-icon {
+    margin: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 991px) {
+    .demo-img {
+        margin: 20px auto 0;
+    }
+    .venues-info {
+        width: 100%;
+    }
+    .venue-data {
+        display: block;
+    }
+    .ticket-card {
+        width: 70%;
+        margin: 10px auto;
+    }
+    .location-card {
+        width: 60%;
+        margin: 10px auto;
+    }
+    #subscribe {
+        flex-direction: column;
+    }
+    #footer {
+        flex-direction: column;
+    }
+    .footer-text2, .footer-text3, .footer-col-3 {
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .demo-img {
+        height: 150px;
+        width: 200px;
+    }
+    .ticket-card {
+        width: 100% !important;
+    }
+}
